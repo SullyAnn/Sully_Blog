@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+.App{
+  background-image: url("./Sully_background_image_website_blog_anime_wide_light_flat_desig_42288848-e50f-41ae-8018-4556ac1071d3.png");
+  height: 100vh;
+  background-size: cover;
+}
 /* base styles */
 * {
   margin: 0;
-  font-family: "Quicksand";
+  font-family: "Poppins";
   color: #333;
 }
 .navbar {
@@ -15,7 +20,7 @@
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
-  color: #f1356d;
+  color: #1d5357;
 }
 .navbar .links {
   margin-left: auto;
@@ -26,7 +31,7 @@
   padding: 6px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: #1d5357;
 }
 .content {
   max-width: 600px;
@@ -35,18 +40,20 @@
 }
 
 .blog-preview{
-  padding: 10px 16px;
+  padding: 14px 20px;
   margin: 20px 0;
   border-bottom: 1px solid #fafafa;
+  background-color: rgba(255, 255, 255, 0.35);
+  border-radius: 25px;
 }
 
 .blog-preview:hover{
-  box-shadow: 1px 3px 5px rgba(0, 0, 0, 1);
+  box-shadow: 1px 3px 5px rgb(255, 255, 255);
 }
 
 .blog-preview h2{
   font-size: 20px;
-  color: #F1356d;
+  color: #1d5357;
   margin-bottom: 8pxs;
 }
 .blog-preview a {
@@ -55,7 +62,7 @@
 
 .blog-details h2{
   font-size: 20px; 
-  color: #F1356d;
+  color: #1d5357;
   margin-bottom: 10px;
 
 }
@@ -65,7 +72,7 @@
 }
 
 .blog-details button {
-  background: #f1356d;
+  background: #1d5357;
   color: #fff;
   border: 0;
   padding: 8px;
@@ -87,7 +94,7 @@
 }
 .create h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #1d5357;
   margin-bottom: 30px;
 }
 .create input, .create textarea, .create select {
@@ -98,11 +105,27 @@
   box-sizing: border-box;
   display: block;
 }
-.create button {
-  background: #f1356d;
+button {
+  background: #1d5357;
   color: #fff;
   border: 0;
   padding: 8px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+.home .sorting{
+  display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.home .sort{
+  background-color: #333;
+}
+.home form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+
 }

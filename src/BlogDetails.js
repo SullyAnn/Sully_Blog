@@ -23,6 +23,10 @@ const BlogDetails = () => {
                 <article>
                     <h2> { blog.title }</h2>
                     <p> Written by { blog.author }</p>
+                    {blog.stars==="1" && <p> ⭐ </p>}
+                    {blog.stars==="2" && <p> ⭐⭐ </p>}
+                    {blog.stars==="3" && <p> ⭐⭐⭐ </p>}
+                
                     <div> { blog.body }</div>
                     <button onClick={handleClick}>delete</button>
                 </article>
